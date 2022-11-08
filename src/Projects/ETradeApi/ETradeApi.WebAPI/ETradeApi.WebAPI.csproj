@@ -23,7 +23,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\RentACar.Persistance\ETradeApi.Persistance.csproj" />
+	  <ProjectReference Include="..\ETradeApi.Persistance\ETradeApi.Persistance.csproj" />
 	</ItemGroup>
 
 </Project>

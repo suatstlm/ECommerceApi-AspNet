@@ -22,6 +22,9 @@ namespace RentACar.Persistance
             services.AddScoped<IUserOperationClaimRepository, UserOperationClaimRepository>();
             services.AddScoped<IOperationClaimRepository, OperationClaimRepository>();
             services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
 
             return services;
         }

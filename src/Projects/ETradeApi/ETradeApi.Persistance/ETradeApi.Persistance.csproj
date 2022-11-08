@@ -16,8 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
     <ProjectReference Include="..\..\..\corePackages\Core.Security\Core.Security.csproj" />
-    <ProjectReference Include="..\RentACar.Application\ETradeApi.Application.csproj" />
-    <ProjectReference Include="..\RentACar.Domain\ETradeApi.Domain.csproj" />
+    <ProjectReference Include="..\ETradeApi.Application\ETradeApi.Application.csproj" />
+    <ProjectReference Include="..\ETradeApi.Domain\ETradeApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>
