@@ -23,15 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Security", "src\corePa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ETradeApi", "ETradeApi", "{E3BE1496-27FA-4B1B-B8B2-A9DC8DDDC4C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Domain", "src\demoProjects\rentACar\RentACar.Domain\ETradeApi.Domain.csproj", "{851ABA83-A034-4567-9434-F50F972429C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Domain", "src\Projects\ETradeApi\ETradeApir.Domain\ETradeApi.Domain.csproj", "{851ABA83-A034-4567-9434-F50F972429C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Application", "src\demoProjects\rentACar\RentACar.Application\ETradeApi.Application.csproj", "{1A7C2491-9C39-495C-A8CE-466DFBB5E351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Application", "src\Projects\ETradeApi\ETradeApi.Application\ETradeApi.Application.csproj", "{1A7C2491-9C39-495C-A8CE-466DFBB5E351}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Infrastructure", "src\demoProjects\rentACar\RentACar.Infrastructure\ETradeApi.Infrastructure.csproj", "{D86F1443-7847-4DD3-8692-2D728B960DB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Infrastructure", "src\Projects\ETradeApi\ETradeApi.Infrastructure\ETradeApi.Infrastructure.csproj", "{D86F1443-7847-4DD3-8692-2D728B960DB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Persistance", "src\demoProjects\rentACar\RentACar.Persistance\ETradeApi.Persistance.csproj", "{7B52A43F-BC23-4054-8EF3-6140A5EFC2A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Persistance", "src\Projects\ETradeApi\ETradeApi.Persistance\ETradeApi.Persistance.csproj", "{7B52A43F-BC23-4054-8EF3-6140A5EFC2A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.WebAPI", "src\demoProjects\rentACar\RentACar.WebAPI\ETradeApi.WebAPI.csproj", "{173DE34D-5221-4DA2-BA7F-84511CD46633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.WebAPI", "src\Projects\ETradeApi\ETradeApi.WebAPI\ETradeApi.WebAPI.csproj", "{173DE34D-5221-4DA2-BA7F-84511CD46633}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
