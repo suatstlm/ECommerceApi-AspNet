@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Security", "src\corePa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ETradeApi", "ETradeApi", "{E3BE1496-27FA-4B1B-B8B2-A9DC8DDDC4C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Domain", "src\Projects\ETradeApi\ETradeApir.Domain\ETradeApi.Domain.csproj", "{851ABA83-A034-4567-9434-F50F972429C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Domain", "src\Projects\ETradeApi\ETradeApi.Domain\ETradeApi.Domain.csproj", "{851ABA83-A034-4567-9434-F50F972429C0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETradeApi.Application", "src\Projects\ETradeApi\ETradeApi.Application\ETradeApi.Application.csproj", "{1A7C2491-9C39-495C-A8CE-466DFBB5E351}"
 EndProject
