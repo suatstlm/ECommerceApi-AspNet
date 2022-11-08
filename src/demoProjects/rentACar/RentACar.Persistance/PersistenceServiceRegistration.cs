@@ -13,7 +13,7 @@ namespace RentACar.Persistance
                                                                 IConfiguration configuration)
         {
             services.AddDbContext<BaseDbContext>(options =>
-                                                     options.UseSqlServer(
+                                                     options.UseNpgsql(
                                                          configuration.GetConnectionString("ConnectionString")));
 
             services.AddScoped<IBrandRepository, BrandRepository>();
