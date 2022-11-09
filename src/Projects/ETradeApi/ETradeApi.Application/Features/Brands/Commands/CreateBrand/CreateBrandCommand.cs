@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using MediatR;
-using RentACar.Application.Features.Brands.Dtos;
-using RentACar.Application.Features.Brands.Rules;
-using RentACar.Application.Services.Repositories;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Features.Brands.Dtos;
+using ETradeApi.Application.Features.Brands.Rules;
+using ETradeApi.Application.Services.Repositories;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Brands.Commands.CreateBrand
+namespace ETradeApi.Application.Features.Brands.Commands.CreateBrand
 {
-    public class CreateBrandCommand: IRequest<CreatedBrandDto>
+    public class CreateBrandCommand : IRequest<CreatedBrandDto>
     {
         public int Id { get; set; }
         public string Name { get; set; }

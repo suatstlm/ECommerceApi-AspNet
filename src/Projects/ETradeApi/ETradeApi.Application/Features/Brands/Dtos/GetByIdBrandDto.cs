@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentACar.Application.Features.Brands.Dtos
+namespace ETradeApi.Application.Features.Brands.Dtos
 {
     public class GetByIdBrandDto
     {

@@ -4,11 +4,11 @@ using Core.Persistence.Dynamic;
 using Core.Persistence.Paging;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using RentACar.Application.Features.Models.Models;
-using RentACar.Application.Services.Repositories;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Features.Models.Models;
+using ETradeApi.Application.Services.Repositories;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Models.Queries.GetListModelByDynamic
+namespace ETradeApi.Application.Features.Models.Queries.GetListModelByDynamic
 {
     public class GetListModelByDynamicQuery: IRequest<GetListModelModel>
     {

@@ -1,9 +1,9 @@
-﻿using Application.Features.Auths.Commands.Register;
+﻿using ETradeApi.Application.Features.Auths.Commands.Register;
 using Core.Security.Dtos;
 using Core.Security.Entities;
 using Microsoft.AspNetCore.Mvc;
-using RentACar.Application.Features.Auths.Dtos;
-using RentACar.WebAPI.Controlllers;
+using ETradeApi.Application.Features.Auths.Dtos;
+using ETradeApi.WebAPI.Controlllers;
 
 namespace WebAPI.Controllers
 {

@@ -1,7 +1,7 @@
 ﻿using Core.Persistence.Paging;
-using RentACar.Application.Features.Brands.Dtos;
+using ETradeApi.Application.Features.Brands.Dtos;
 
-namespace RentACar.Application.Features.Brands.Models
+namespace ETradeApi.Application.Features.Brands.Models
 {
     public class GetListBrandModel: BasePageableModel
     {

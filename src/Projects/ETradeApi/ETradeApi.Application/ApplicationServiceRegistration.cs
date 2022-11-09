@@ -1,14 +1,14 @@
-﻿using Application.Services.AuthService;
+﻿using ETradeApi.Application.Services.AuthService;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using RentACar.Application.Features.Auths.Rules;
-using RentACar.Application.Features.Brands.Rules;
-using RentACar.Application.Services.AuthServices;
+using ETradeApi.Application.Features.Auths.Rules;
+using ETradeApi.Application.Features.Brands.Rules;
+using ETradeApi.Application.Services.AuthServices;
 using System.Reflection;
 
-namespace RentACar.Application
+namespace ETradeApi.Application
 {
     public static class ApplicationServiceRegistration
     {

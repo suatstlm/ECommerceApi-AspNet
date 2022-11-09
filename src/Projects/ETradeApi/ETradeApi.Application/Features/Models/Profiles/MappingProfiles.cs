@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Core.Persistence.Paging;
-using RentACar.Application.Features.Models.Dtos;
-using RentACar.Application.Features.Models.Models;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Features.Models.Dtos;
+using ETradeApi.Application.Features.Models.Models;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Models.Profiles
+namespace ETradeApi.Application.Features.Models.Profiles
 {
     public class MappingProfiles: Profile
     {

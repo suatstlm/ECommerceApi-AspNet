@@ -1,8 +1,8 @@
 ﻿using Core.CrossCuttingConcerns.Exceptions;
 using Core.Security.Entities;
-using RentACar.Application.Services.Repositories;
+using ETradeApi.Application.Services.Repositories;
 
-namespace RentACar.Application.Features.Auths.Rules
+namespace ETradeApi.Application.Features.Auths.Rules
 {
     public class AuthBusinessRules
     {

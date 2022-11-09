@@ -2,11 +2,11 @@
 using Core.Application.Requests;
 using Core.Persistence.Paging;
 using MediatR;
-using RentACar.Application.Features.Brands.Models;
-using RentACar.Application.Services.Repositories;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Features.Brands.Models;
+using ETradeApi.Application.Services.Repositories;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Brands.Queries.GetListBrand
+namespace ETradeApi.Application.Features.Brands.Queries.GetListBrand
 {
     public class GetListBrandQuery: IRequest<GetListBrandModel>
     {

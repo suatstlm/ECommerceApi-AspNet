@@ -1,9 +1,9 @@
 ﻿using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
-using RentACar.Application.Services.Repositories;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Services.Repositories;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Brands.Rules
+namespace ETradeApi.Application.Features.Brands.Rules
 {
     public class BrandBusinessRules
     {

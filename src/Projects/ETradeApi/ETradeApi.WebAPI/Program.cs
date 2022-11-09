@@ -5,8 +5,8 @@ using Core.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using RentACar.Application;
-using RentACar.Persistance;
+using ETradeApi.Application;
+using ETradeApi.Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
 

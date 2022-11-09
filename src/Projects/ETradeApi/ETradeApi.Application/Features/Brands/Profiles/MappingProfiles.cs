@@ -1,13 +1,12 @@
 ﻿using AutoMapper;
 using Core.Persistence.Paging;
-using RentACar.Application.Features.Brands.Commands.CreateBrand;
-using RentACar.Application.Features.Brands.Commands.DeleteBrand;
-using RentACar.Application.Features.Brands.Commands.UpdateBrand;
-using RentACar.Application.Features.Brands.Dtos;
-using RentACar.Application.Features.Brands.Models;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Features.Brands.Commands.CreateBrand;
+using ETradeApi.Application.Features.Brands.Commands.UpdateBrand;
+using ETradeApi.Application.Features.Brands.Dtos;
+using ETradeApi.Application.Features.Brands.Models;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Brands.Profiles
+namespace ETradeApi.Application.Features.Brands.Profiles
 {
     public class MappingProfiles : Profile
     {

@@ -3,11 +3,11 @@ using Core.Application.Requests;
 using Core.Persistence.Paging;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using RentACar.Application.Features.Models.Models;
-using RentACar.Application.Services.Repositories;
-using RentACar.Domain.Entities;
+using ETradeApi.Application.Features.Models.Models;
+using ETradeApi.Application.Services.Repositories;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Features.Models.Queries.GetListModel
+namespace ETradeApi.Application.Features.Models.Queries.GetListModel
 {
     public class GetListModelQuery: IRequest<GetListModelModel>
     {

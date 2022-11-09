@@ -1,6 +1,6 @@
-﻿using RentACar.Application.Features.Models.Dtos;
+﻿using ETradeApi.Application.Features.Models.Dtos;
 
-namespace RentACar.Application.Features.Models.Models
+namespace ETradeApi.Application.Features.Models.Models
 {
     public class GetListModelModel
     {

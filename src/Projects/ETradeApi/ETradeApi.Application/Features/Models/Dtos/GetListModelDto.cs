@@ -1,5 +1,5 @@
 ﻿
-namespace RentACar.Application.Features.Models.Dtos
+namespace ETradeApi.Application.Features.Models.Dtos
 {
     public class GetListModelDto
     {

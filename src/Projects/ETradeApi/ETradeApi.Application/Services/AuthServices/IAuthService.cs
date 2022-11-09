@@ -1,8 +1,7 @@
-﻿
-using Core.Security.Entities;
+﻿using Core.Security.Entities;
 using Core.Security.JWT;
 
-namespace RentACar.Application.Services.AuthServices
+namespace ETradeApi.Application.Services.AuthServices
 {
     public interface IAuthService
     {

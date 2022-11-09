@@ -1,14 +1,14 @@
 ﻿using Core.Application.Requests;
 using Microsoft.AspNetCore.Mvc;
-using RentACar.Application.Features.Brands.Commands.CreateBrand;
-using RentACar.Application.Features.Brands.Commands.DeleteBrand;
-using RentACar.Application.Features.Brands.Commands.UpdateBrand;
-using RentACar.Application.Features.Brands.Dtos;
-using RentACar.Application.Features.Brands.Models;
-using RentACar.Application.Features.Brands.Queries.GetByIdBrand;
-using RentACar.Application.Features.Brands.Queries.GetListBrand;
+using ETradeApi.Application.Features.Brands.Commands.CreateBrand;
+using ETradeApi.Application.Features.Brands.Commands.DeleteBrand;
+using ETradeApi.Application.Features.Brands.Commands.UpdateBrand;
+using ETradeApi.Application.Features.Brands.Dtos;
+using ETradeApi.Application.Features.Brands.Models;
+using ETradeApi.Application.Features.Brands.Queries.GetByIdBrand;
+using ETradeApi.Application.Features.Brands.Queries.GetListBrand;
 
-namespace RentACar.WebAPI.Controlllers
+namespace ETradeApi.WebAPI.Controlllers
 {
     [Route("api/[controller]")]
     [ApiController]

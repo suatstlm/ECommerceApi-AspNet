@@ -1,4 +1,4 @@
-﻿namespace RentACar.Application.Features.Auths.Dtos
+﻿namespace ETradeApi.Application.Features.Auths.Dtos
 {
     public class RegisteredDto: RefreshedTokenDto
     { 

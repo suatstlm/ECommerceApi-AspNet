@@ -1,5 +1,5 @@
 ﻿
-namespace RentACar.Application.Features.Brands.Dtos
+namespace ETradeApi.Application.Features.Brands.Dtos
 {
      public class DeletedBrandDto
     {

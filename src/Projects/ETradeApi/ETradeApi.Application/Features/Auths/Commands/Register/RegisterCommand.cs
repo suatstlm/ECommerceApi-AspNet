@@ -3,12 +3,12 @@ using Core.Security.Entities;
 using Core.Security.Hashing;
 using Core.Security.JWT;
 using MediatR;
-using RentACar.Application.Features.Auths.Dtos;
-using RentACar.Application.Features.Auths.Rules;
-using RentACar.Application.Services.AuthServices;
-using RentACar.Application.Services.Repositories;
+using ETradeApi.Application.Features.Auths.Dtos;
+using ETradeApi.Application.Features.Auths.Rules;
+using ETradeApi.Application.Services.AuthServices;
+using ETradeApi.Application.Services.Repositories;
 
-namespace Application.Features.Auths.Commands.Register;
+namespace ETradeApi.Application.Features.Auths.Commands.Register;
 
 public class RegisterCommand : IRequest<RegisteredDto>
 {

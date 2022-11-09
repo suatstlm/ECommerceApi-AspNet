@@ -2,10 +2,10 @@
 using Core.Security.Entities;
 using Core.Security.JWT;
 using Microsoft.EntityFrameworkCore;
-using RentACar.Application.Services.AuthServices;
-using RentACar.Application.Services.Repositories;
+using ETradeApi.Application.Services.AuthServices;
+using ETradeApi.Application.Services.Repositories;
 
-namespace Application.Services.AuthService;
+namespace ETradeApi.Application.Services.AuthService;
 
 public class AuthManager : IAuthService
 {
