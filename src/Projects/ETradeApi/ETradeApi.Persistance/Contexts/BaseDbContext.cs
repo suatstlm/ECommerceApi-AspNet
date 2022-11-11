@@ -1,9 +1,10 @@
 ﻿using Core.Security.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using RentACar.Domain.Entities;
+using ETradeApi.Domain.Entities;
+using Core.Persistence.Repositories;
 
-namespace RentACar.Persistance.Contexts
+namespace ETradeApi.Persistance.Contexts
 {
     public class BaseDbContext : DbContext
     {
@@ -25,6 +26,7 @@ namespace RentACar.Persistance.Contexts
         public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
         {
             Configuration = configuration;
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -32,6 +34,35 @@ namespace RentACar.Persistance.Contexts
             if (!optionsBuilder.IsConfigured)
                 base.OnConfiguring(
                     optionsBuilder.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+        }
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            var datas = ChangeTracker.Entries<Entity>();
+            foreach (var data in datas)
+            {
+                _ = data.State switch
+                {
+                    EntityState.Added => data.Entity.CreateDate = DateTime.Now,
+                    EntityState.Modified => data.Entity.UpdateDate = DateTime.Now
+                };
+            }
+
+            return await base.SaveChangesAsync(cancellationToken);
+        }
+
+        public override int SaveChanges()
+        {
+            var datas = ChangeTracker.Entries<Entity>();
+            foreach (var data in datas)
+            {
+                _ = data.State switch
+                {
+                    EntityState.Added => data.Entity.CreateDate = DateTime.UtcNow,
+                    EntityState.Modified => data.Entity.UpdateDate = DateTime.UtcNow
+                };
+            }
+
+            return base.SaveChanges();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,7 +1,7 @@
 ﻿using Core.Persistence.Repositories;
-using RentACar.Domain.Entities;
+using ETradeApi.Domain.Entities;
 
-namespace RentACar.Application.Services.Repositories
+namespace ETradeApi.Application.Services.Repositories
 {
     public interface IOrderRepository : IAsyncRepository<Order>, IRepository<Order>
     {
