@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RentACar.Application.Services.Repositories;
-using RentACar.Persistance.Contexts;
-using RentACar.Persistance.Repositories;
+using ETradeApi.Application.Services.Repositories;
+using ETradeApi.Persistance.Contexts;
+using ETradeApi.Persistance.Repositories;
 
-namespace RentACar.Persistance
+namespace ETradeApi.Persistance
 {
     public static class PersistenceServiceRegistration
     {

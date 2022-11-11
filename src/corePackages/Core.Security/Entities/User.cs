@@ -23,9 +23,11 @@ public class User : Entity
     }
 
     public User(int id, string firstName, string lastName, string email, byte[] passwordSalt, byte[] passwordHash,
-                bool status, AuthenticatorType authenticatorType) : this()
+                bool status, AuthenticatorType authenticatorType, DateTime createDate, DateTime updateDate):this()
     {
         Id = id;
+        CreateDate = createDate;
+        UpdateDate = updateDate;
         FirstName = firstName;
         LastName = lastName;
         Email = email;
