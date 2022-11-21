@@ -1,9 +1,9 @@
 ﻿using Core.Application.Requests;
-using Core.Persistence.Dynamic;
 using Microsoft.AspNetCore.Mvc;
 using ETradeApi.Application.Features.Models.Models;
 using ETradeApi.Application.Features.Models.Queries.GetListModel;
 using ETradeApi.Application.Features.Models.Queries.GetListModelByDynamic;
+using Core.Persistence.Dynamic;
 
 namespace ETradeApi.WebAPI.Controlllers
 {

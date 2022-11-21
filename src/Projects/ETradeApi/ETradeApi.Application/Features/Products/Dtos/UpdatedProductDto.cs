@@ -1,7 +1,7 @@
 ﻿
-namespace ETradeApi.Application.Features.Brands.Dtos
+namespace ETradeApi.Application.Features.Products.Dtos
 {
-    public class GetListBrandDto
+    public class UpdatedProductDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

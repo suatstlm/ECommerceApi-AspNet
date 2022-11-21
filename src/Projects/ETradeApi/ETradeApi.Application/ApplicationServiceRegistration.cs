@@ -7,6 +7,9 @@ using ETradeApi.Application.Features.Auths.Rules;
 using ETradeApi.Application.Features.Brands.Rules;
 using ETradeApi.Application.Services.AuthServices;
 using System.Reflection;
+using ETradeApi.Application.Features.Products.Rules;
+using Core.CrossCuttingConcerns.Logging.Serilog;
+using Core.CrossCuttingConcerns.Logging.Serilog.Logger;
 
 namespace ETradeApi.Application
 {
@@ -20,6 +23,7 @@ namespace ETradeApi.Application
 
             services.AddScoped<BrandBusinessRules>();
             services.AddScoped<AuthBusinessRules>();
+            services.AddScoped<ProductBusinessRules>();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
@@ -29,6 +33,8 @@ namespace ETradeApi.Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
 
             services.AddScoped<IAuthService, AuthManager>();
+
+            services.AddSingleton<LoggerServiceBase, FileLogger>();
 
             return services;
         }

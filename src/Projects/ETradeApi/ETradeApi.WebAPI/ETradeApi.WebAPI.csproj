@@ -9,6 +9,7 @@
 	<ItemGroup>
 		<PackageReference Include="MediatR" Version="10.0.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.11" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,6 +24,9 @@
   </ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
+	  <ProjectReference Include="..\..\..\corePackages\Core.Security\Core.Security.csproj" />
+	  <ProjectReference Include="..\ETradeApi.Infrastructure\ETradeApi.Infrastructure.csproj" />
 	  <ProjectReference Include="..\ETradeApi.Persistance\ETradeApi.Persistance.csproj" />
 	</ItemGroup>
 

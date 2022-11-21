@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "RentACar.WebAPI": {
+    "ETradeApi.WebAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
