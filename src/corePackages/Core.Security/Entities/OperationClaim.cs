@@ -10,11 +10,9 @@ public class OperationClaim : Entity
     {
     }
 
-    public OperationClaim(int id, string name, DateTime createDate, DateTime updateDate) : this()
+    public OperationClaim(int id, string name) : this()
     {
         Id = id;
-        CreateDate = createDate;
-        UpdateDate = updateDate;
         Name = name;
     }
 }

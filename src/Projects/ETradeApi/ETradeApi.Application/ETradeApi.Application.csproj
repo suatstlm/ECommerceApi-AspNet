@@ -19,15 +19,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\Auths\Constants\" />
 		<Folder Include="Features\Auths\Models\" />
-		<Folder Include="Features\Auths\Profiles\" />
 		<Folder Include="Features\Auths\Queries\" />
 		<Folder Include="Features\Products\Models\" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
+		<ProjectReference Include="..\..\..\corePackages\Core.ElasticSearch\Core.ElasticSearch.csproj" />
+		<ProjectReference Include="..\..\..\corePackages\Core.Mailing\Core.Mailing.csproj" />
 		<ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
 		<ProjectReference Include="..\..\..\corePackages\Core.Security\Core.Security.csproj" />
 		<ProjectReference Include="..\ETradeApi.Domain\ETradeApi.Domain.csproj" />
