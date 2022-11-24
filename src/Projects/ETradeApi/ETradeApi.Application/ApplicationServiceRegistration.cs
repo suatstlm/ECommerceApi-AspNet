@@ -4,7 +4,6 @@ using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using ETradeApi.Application.Features.Auths.Rules;
-using ETradeApi.Application.Features.Brands.Rules;
 using ETradeApi.Application.Services.AuthServices;
 using System.Reflection;
 using ETradeApi.Application.Features.Products.Rules;
@@ -21,7 +20,6 @@ namespace ETradeApi.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            services.AddScoped<BrandBusinessRules>();
             services.AddScoped<AuthBusinessRules>();
             services.AddScoped<ProductBusinessRules>();
 

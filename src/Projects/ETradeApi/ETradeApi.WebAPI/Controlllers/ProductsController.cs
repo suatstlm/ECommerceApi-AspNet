@@ -1,5 +1,4 @@
 ﻿using Core.Application.Requests;
-using ETradeApi.Application.Features.Brands.Dtos;
 using ETradeApi.Application.Features.Products.Commands.CreateProduct;
 using ETradeApi.Application.Features.Products.Commands.DeleteProduct;
 using ETradeApi.Application.Features.Products.Commands.UpdateProduct;
