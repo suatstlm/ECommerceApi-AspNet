@@ -10,10 +10,8 @@ public class Entity
     {
     }
 
-    public Entity(int id, DateTime createDate, DateTime updateDate) : this()
+    public Entity(int id) : this()
     {
         Id = id;
-        CreateDate = createDate;
-        UpdateDate = updateDate;
     }
 }

@@ -14,11 +14,8 @@ public class UserOperationClaim : Entity
     {
     }
 
-    public UserOperationClaim(int id, int userId, int operationClaimId, DateTime createDate, DateTime updateDate): this()
+    public UserOperationClaim(int id, int userId, int operationClaimId) : base(id)
     {
-        Id = id;
-        CreateDate = createDate;
-        UpdateDate = updateDate;
         UserId = userId;
         OperationClaimId = operationClaimId;
     }
