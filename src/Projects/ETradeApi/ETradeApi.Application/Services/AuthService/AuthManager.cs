@@ -1,8 +1,6 @@
-﻿using Core.Persistence.Paging;
-using Core.Security.Entities;
+﻿using Core.Security.Entities;
 using Core.Security.JWT;
 using Microsoft.EntityFrameworkCore;
-using ETradeApi.Application.Services.AuthServices;
 using ETradeApi.Application.Services.Repositories;
 using Core.Mailing;
 using Core.Security.EmailAuthenticator;

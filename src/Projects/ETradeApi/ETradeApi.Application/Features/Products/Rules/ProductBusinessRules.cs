@@ -1,11 +1,12 @@
-﻿using Core.CrossCuttingConcerns.Exceptions;
+﻿using Core.Application.Rules;
+using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
 using ETradeApi.Application.Services.Repositories;
 using ETradeApi.Domain.Entities;
 
 namespace ETradeApi.Application.Features.Products.Rules
 {
-    public class ProductBusinessRules
+    public class ProductBusinessRules: BaseBusinessRules
     {
         private readonly IProductRepository _productRepository;
 

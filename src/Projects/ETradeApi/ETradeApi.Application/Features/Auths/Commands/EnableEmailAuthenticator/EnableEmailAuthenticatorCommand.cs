@@ -2,7 +2,7 @@
 using Core.Security.Entities;
 using Core.Security.Enums;
 using ETradeApi.Application.Features.Auths.Rules;
-using ETradeApi.Application.Services.AuthServices;
+using ETradeApi.Application.Services.AuthService;
 using ETradeApi.Application.Services.Repositories;
 using ETradeApi.Application.Services.UserService;
 using MediatR;

@@ -1,17 +1,21 @@
 ﻿using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using ETradeApi.Application.Features.Products.Dtos;
 using ETradeApi.Application.Features.Products.Rules;
 using ETradeApi.Application.Services.Repositories;
 using ETradeApi.Domain.Entities;
 using MediatR;
+using static ETradeApi.Domain.Constants.OperationClaims;
 
 namespace ETradeApi.Application.Features.Products.Commands.CreateProduct
 {
-    public class CreateProductCommand : IRequest<CreatedProductDto>
+    public class CreateProductCommand : IRequest<CreatedProductDto>, ISecuredRequest
     {
         public string Name { get; set; }
         public int Stock { get; set; }
         public float Price { get; set; }
+
+        public string[] Roles => new[] { Admin};
 
         public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, CreatedProductDto>
         {

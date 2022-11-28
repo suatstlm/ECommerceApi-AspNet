@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebAPI.Controllers;
+namespace ETradeApi.WebAPI.Controllers;
 
 public class BaseController : ControllerBase
 {

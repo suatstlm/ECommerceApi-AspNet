@@ -1,14 +1,17 @@
 ﻿using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using ETradeApi.Application.Features.Products.Dtos;
 using ETradeApi.Application.Services.Repositories;
 using ETradeApi.Domain.Entities;
 using MediatR;
+using static ETradeApi.Domain.Constants.OperationClaims;
 
 namespace ETradeApi.Application.Features.Products.Queries.GetByIdProduct
 {
-    public class GetByIdProductQuery : IRequest<GetByIdProductDto>
+    public class GetByIdProductQuery : IRequest<GetByIdProductDto>, ISecuredRequest
     {
         public int Id { get; set; }
+        public string[] Roles => new[] { Admin };
 
         public class GetByIdProductQueryHandler : IRequestHandler<GetByIdProductQuery, GetByIdProductDto>
         {

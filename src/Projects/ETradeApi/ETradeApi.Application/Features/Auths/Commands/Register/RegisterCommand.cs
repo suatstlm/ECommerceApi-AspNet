@@ -1,11 +1,10 @@
-﻿using Core.Security.Dtos;
-using Core.Security.Entities;
+﻿using Core.Security.Entities;
 using Core.Security.Hashing;
 using Core.Security.JWT;
 using MediatR;
 using ETradeApi.Application.Features.Auths.Dtos;
 using ETradeApi.Application.Features.Auths.Rules;
-using ETradeApi.Application.Services.AuthServices;
+using ETradeApi.Application.Services.AuthService;
 using ETradeApi.Application.Services.Repositories;
 
 namespace ETradeApi.Application.Features.Auths.Commands.Register

@@ -2,7 +2,7 @@
 using Core.Security.Entities;
 using ETradeApi.Application.Features.Auths.Dtos;
 using ETradeApi.Application.Features.Auths.Rules;
-using ETradeApi.Application.Services.AuthServices;
+using ETradeApi.Application.Services.AuthService;
 using MediatR;
 
 namespace ETradeApi.Application.Features.Auths.Commands.RevokeToken

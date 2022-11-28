@@ -1,7 +1,7 @@
 ﻿using Core.Security.Entities;
 using Core.Security.JWT;
 
-namespace ETradeApi.Application.Services.AuthServices
+namespace ETradeApi.Application.Services.AuthService
 {
     public interface IAuthService
     {

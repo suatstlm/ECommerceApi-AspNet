@@ -3,8 +3,6 @@ using Core.Application.Pipelines.Validation;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using ETradeApi.Application.Features.Auths.Rules;
-using ETradeApi.Application.Services.AuthServices;
 using System.Reflection;
 using ETradeApi.Application.Features.Products.Rules;
 using Core.CrossCuttingConcerns.Logging.Serilog;
@@ -14,6 +12,7 @@ using ETradeApi.Application.Services.UserService;
 using Core.Mailing;
 using Core.Mailing.MailKitImplementations;
 using Core.ElasticSearch;
+using Core.Application.Rules;
 
 namespace ETradeApi.Application
 {
@@ -25,15 +24,17 @@ namespace ETradeApi.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            services.AddScoped<AuthBusinessRules>();
-            services.AddScoped<ProductBusinessRules>();
+            services.AddSubClassesOfType(Assembly.GetExecutingAssembly(), typeof(BaseBusinessRules));
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CacheRemovingBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(TransactionScopeBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(TransactionScopeBehavior<,>));
+
 
             services.AddScoped<IAuthService, AuthManager>();
             services.AddScoped<IUserService, UserManager>();
@@ -42,6 +43,26 @@ namespace ETradeApi.Application
             services.AddSingleton<LoggerServiceBase, FileLogger>();
             services.AddSingleton<IElasticSearch, ElasticSearchManager>(); ;
 
+            return services;
+        }
+        public static IServiceCollection AddSubClassesOfType(
+        this IServiceCollection services,
+        Assembly assembly,
+        Type type,
+        Func<IServiceCollection, Type, IServiceCollection>? addWithLifeCycle = null)
+        {
+            var types = assembly.GetTypes().Where(t => t.IsSubclassOf(type) && type != t).ToList();
+            foreach (var item in types)
+            {
+                if (addWithLifeCycle == null)
+                {
+                    services.AddScoped(item);
+                }
+                else
+                {
+                    addWithLifeCycle(services, type);
+                }
+            }
             return services;
         }
     }

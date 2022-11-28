@@ -6,8 +6,8 @@ using ETradeApi.Application.Features.Products.Dtos;
 using ETradeApi.Application.Features.Products.Models;
 using ETradeApi.Application.Features.Products.Queries.GetByIdProduct;
 using ETradeApi.Application.Features.Products.Queries.GetListProduct;
+using ETradeApi.WebAPI.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Controllers;
 
 namespace ETradeApi.WebAPI.Controlllers
 {

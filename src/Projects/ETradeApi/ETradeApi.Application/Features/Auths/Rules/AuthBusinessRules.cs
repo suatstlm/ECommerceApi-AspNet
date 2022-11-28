@@ -1,4 +1,4 @@
-﻿using Core.Application.Rules_;
+﻿using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Security.Entities;
 using Core.Security.Enums;

@@ -42,9 +42,9 @@ namespace ETradeApi.Persistance.Contexts
             {
                 _ = data.State switch
                 {
-                    EntityState.Added => data.Entity.CreateDate = DateTime.Now,
-                    EntityState.Modified => data.Entity.UpdateDate = DateTime.Now,
-                    _ => DateTime.Now
+                    EntityState.Added => data.Entity.CreateDate = DateTime.UtcNow,
+                    EntityState.Modified => data.Entity.UpdateDate = DateTime.UtcNow,
+                    _ => DateTime.UtcNow
                 };
             }
 
@@ -59,7 +59,8 @@ namespace ETradeApi.Persistance.Contexts
                 _ = data.State switch
                 {
                     EntityState.Added => data.Entity.CreateDate = DateTime.UtcNow,
-                    EntityState.Modified => data.Entity.UpdateDate = DateTime.UtcNow
+                    EntityState.Modified => data.Entity.UpdateDate = DateTime.UtcNow,
+                    _ => DateTime.UtcNow
                 };
             }
 

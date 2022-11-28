@@ -2,7 +2,7 @@
 using Core.Security.JWT;
 using ETradeApi.Application.Features.Auths.Dtos;
 using ETradeApi.Application.Features.Auths.Rules;
-using ETradeApi.Application.Services.AuthServices;
+using ETradeApi.Application.Services.AuthService;
 using ETradeApi.Application.Services.UserService;
 using MediatR;
 
